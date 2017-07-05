@@ -24,6 +24,7 @@ body {font-size:16px;}
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
     <a href="#profile" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Business Profile</a>
     <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Team</a>
+    <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gallery</a>
     <a href="#inquiry" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inquiry</a>
     <a href="#careers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Careers</a>
 
@@ -112,12 +113,45 @@ body {font-size:16px;}
     </div>
   </div>
 
+  <!-- Gallery -->
+  <div class="w3-container" id="gallery" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Gallery.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m4">
+      <img src="batterycable.png" style="width:100%" onclick="onClick(this)" alt="Battery Cable">
+    </div>
+    <div class="w3-col m4">
+      <img src="mainharness.png" style="width:100%" onclick="onClick(this)" alt="Main Harness">
+    </div>
+    <div class="w3-col m4">
+      <img src="switchharness.png" style="width:100%" onclick="onClick(this)" alt="Switch Harness">
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col m4">
+      <img src="erickshaw.jpg" style="width:100%" onclick="onClick(this)" alt="E-Rickshaw">
+    </div>
+    <div class="w3-col m8">
+      <img src="2wheeler.jpg" style="width:100%" onclick="onClick(this)" alt="2 Wheeler">
+    </div>
+  </div>
+
   <!-- Inquiry -->
   <div class="w3-container" id="inquiry" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Inquiry.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Do you want us to do something for you? Fill out the form and send us the details :) We love meeting new people!</p>
-    <iframe src="https://docs.google.com/a/kanzen.co.in/forms/d/e/1FAIpQLSfi4ilIn7jgvRaKryKzB1_8Vhv68_0muhmD-hQJP9uliX3LVA/viewform?embedded=true" width="350" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-card w3-center">
+      	<iframe src="https://docs.google.com/a/kanzen.co.in/forms/d/e/1FAIpQLSfi4ilIn7jgvRaKryKzB1_8Vhv68_0muhmD-hQJP9uliX3LVA/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
+    </div>
   </div>
 
   <!-- Careers -->
