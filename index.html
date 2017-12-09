@@ -1,247 +1,249 @@
 
 <!DOCTYPE html>
 <html>
-<title>KANZEN</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="icon" type="image/png" href="logo.png">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
-<body>
+  <head>
+    <title>KANZEN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="icon" type="image/png" href="logo.png">
+  </head>
+  <style>
+  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+  body {font-size:16px;}
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+  </style>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Kanzen<br>Wiring Systems</b></h3>
+  <body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Kanzen<br>Wiring Systems</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+      <a href="#profile" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Business Profile</a>
+      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Team</a>
+      <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gallery</a>
+      <a href="#certificate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Certification</a>
+      <a href="#inquiry" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inquiry</a>
+      <a href="#careers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Careers</a>
+
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-indigo w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-indigo w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Kanzen <small>Wiring Systems</small></span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-jumbo">
+        <b>Kanzen Wiring Systems</b>
+        <br>
+        <small>ISO 9001 Certified</small>
+      </h1>
+    </div>
+
+    <div class="w3-container" id="about" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-indigo"><b>About</b></h1>
+      <p>After 25 Years of Industrial experience and 10 years in Automotive wiring harness industry, this company has been started by Managing Partners in Gurgaon, the Automotive Hub of India.</p>
+      <p>We are willing to serve various Automotive customers who manufacture 2 wheelers and 4 wheelers parts to OE’s, initially, and in 2nd phase to OE directly with vision of providing best quality, productivity, and cost competitiveness</p>
+      <p>Major goal of the partners is to give 100% customer satisfaction by supplying quality product to the Indian Automotive Industry and to their Tier1 supplier. </p>
+    </div>
+
+    <!-- Business Profile -->
+    <div class="w3-container" id="profile" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-indigo"><b>Business Profile</b></h1>
+      <p>We are wire harness manufacturers who focus on what's best for your products and what's best for you!</p>
+      <p>
+        <b>Workshop</b><br>
+        We provide best in class machinery to tailor our products for your need
+      </p>
+      <p>
+        <b>Consulting</b><br>
+        Expert advice from seasoned professionals
+      </p>
+      <p>
+        <b>Manufacturing</b><br>
+        Large scale and small scale orders to fit every requirement
+      </p>
+    </div>
+
+    <!-- Our Team -->
+    <div class="w3-container" id="team" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-indigo"><b>Our Team</b></h1>
+      <p>A highly qualified and energetic team.</p>
+      <p>We are professionals in our fields with over 25+ years of experience.</p>
+      <p><b>Our workforce is thoughtfully chosen</b></p>
+    </div>
+
+    <!-- The Team -->
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <div class="w3-container">
+            <p>
+              <b>Rajiv Mehta</b><br>
+              <b>Contact No.:</b> +91 9711161659<br><br>
+              <i>"Man needs his difficulties because they are necessary to enjoy success"</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <div class="w3-container">
+            <p>
+              <b>Rupinder Juneja</b><br>
+              <b>Contact No.:</b> +91 9810050675<br><br>
+              <i>"He who wishes to secure the good of others has already secured his own"</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="w3-container" id="gallery" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-indigo"><b>Gallery</b></h1>
+    </div>
+
+    <div class="w3-row-padding">
+      <p><b>Applications</b></p>
+      <div class="w3-col m6">
+        <img src="truckcar.jpg" style="width:100%" onclick="onClick(this)" alt="Car and Truck">
+      </div>
+      <div class="w3-col m3">
+        <img src="bike.jpg" style="width:100%" onclick="onClick(this)" alt="Bike">
+      </div>
+      <div class="w3-col m3">
+        <img src="scooter.jpg" style="width:100%" onclick="onClick(this)" alt="Scooter">
+      </div>
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-col m3">
+        <img src="inverter.jpg" style="width:100%" onclick="onClick(this)" alt="Inverter">
+      </div>
+      <div class="w3-col m3">
+        <img src="ac.png" style="width:100%" onclick="onClick(this)" alt="AC">
+      </div>
+      <div class="w3-col m3">
+        <img src="television.png" style="width:100%" onclick="onClick(this)" alt="Television">
+      </div>
+      <div class="w3-col m3">
+        <img src="fridge.jpg" style="width:100%" onclick="onClick(this)" alt="Refrigerator">
+      </div> 
+    </div>
+    <div class="w3-row-padding">
+      <p><b>Products</b></p>
+      <div class="w3-col m3">
+        <img src="switchharness.png" style="width:100%" onclick="onClick(this)" alt="Switch Harness">
+      </div>
+      <div class="w3-col m2">
+        <img src="batterycable.png" style="width:100%" onclick="onClick(this)" alt="Battery Cable">
+      </div>
+      <div class="w3-col m3">
+        <img src="mainharness.jpg" style="width:100%" onclick="onClick(this)" alt="Main Harness">
+      </div>
+      <div class="w3-col m2">
+        <img src="meterharness.jpg" style="width:100%" onclick="onClick(this)" alt="Meter Harness">
+      </div>
+      <div class="w3-col m2">
+        <img src="taillight.jpg" style="width:100%" onclick="onClick(this)" alt="Tail Light">
+      </div>
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-col m1">
+        <p><b>Machines</b></p>
+      </div>
+      <div class="w3-col m3">
+        <img src="pvcweld.jpg" style="width:100%" onclick="onClick(this)" alt="PVC Welding">
+      </div>
+      <div class="w3-col m2">
+        <img src="crimping.jpg" style="width:100%" onclick="onClick(this)" alt="Wire Crimping">
+      </div>
+      <div class="w3-col m3">
+        <img src="wirecutstrip.png" style="width:100%" onclick="onClick(this)" alt="Wire Curtting and Stripping">
+      </div>
+      <div class="w3-col m3">
+        <img src="wirestrip.jpg" style="width:100%" onclick="onClick(this)" alt="Wire Stripping">
+      </div> 
+    </div>
+
+    <!-- ISO 9001 Certificate -->
+    <div class="w3-container" id="certificate" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-indigo"><b>ISO 9001 Certificate</b></h1>
+      <div class="w3-col m5">
+        <img src="certificate.jpg" style="width:100%" onclick="onClick(this)" alt="Certificate">
+      </div>
+    </div>
+
+    <!-- Inquiry -->
+    <div class="w3-container" id="inquiry" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-indigo"><b>Inquiry</b></h1>
+      <p>Do you want us to do something for you? Fill out the form and send us the details :) We love meeting new people!</p>
+      <p>You can also reach us at <b>info@kanzen.co.in</b></p>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-card w3-center">
+          <iframe src="https://docs.google.com/a/kanzen.co.in/forms/d/e/1FAIpQLSfi4ilIn7jgvRaKryKzB1_8Vhv68_0muhmD-hQJP9uliX3LVA/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Careers -->
+    <div class="w3-container" id="careers" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-indigo"><b>Careers</b></h1>
+      <p>We're Hiring!</p>
+      <p>Send us your Resume at: <b>info@kanzen.co.in</b></p>
+    </div>
+
+
+  <!-- End page content -->
   </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
-    <a href="#profile" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Business Profile</a>
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Team</a>
-    <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gallery</a>
-    <a href="#certificate" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Certification</a>
-    <a href="#inquiry" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inquiry</a>
-    <a href="#careers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Careers</a>
 
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-indigo w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-indigo w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Kanzen <small>Wiring Systems</small></span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px">
-    <h1 class="w3-jumbo">
-      <b>Kanzen Wiring Systems</b>
+  <!-- W3.CSS Container -->
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right">
+      <b>Address:</b> Plot No.210, Sector 37, Pace City II, Udyog Vihar, Phase - VI, Gurgaon - 122001 (Haryana), India
       <br>
-      <small>ISO 9001 Certified</small>
-    </h1>
-  </div>
-
-  <div class="w3-container" id="about" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>About</b></h1>
-    <p>After 25 Years of Industrial experience and 10 years in Automotive wiring harness industry, this company has been started by Managing Partners in Gurgaon, the Automotive Hub of India.</p>
-    <p>We are willing to serve various Automotive customers who manufacture 2 wheelers and 4 wheelers parts to OE’s, initially, and in 2nd phase to OE directly with vision of providing best quality, productivity, and cost competitiveness</p>
-    <p>Major goal of the partners is to give 100% customer satisfaction by supplying quality product to the Indian Automotive Industry and to their Tier1 supplier. </p>
-  </div>
-
-  <!-- Business Profile -->
-  <div class="w3-container" id="profile" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>Business Profile</b></h1>
-    <p>We are wire harness manufacturers who focus on what's best for your products and what's best for you!</p>
-    <p>
-      <b>Workshop</b><br>
-      We provide best in class machinery to tailor our products for your need
-    </p>
-    <p>
-      <b>Consulting</b><br>
-      Expert advice from seasoned professionals
-    </p>
-    <p>
-      <b>Manufacturing</b><br>
-      Large scale and small scale orders to fit every requirement
+      <b>ISO 9001 Certified : </b>QMS-H1701237
     </p>
   </div>
 
-  <!-- Our Team -->
-  <div class="w3-container" id="team" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>Our Team</b></h1>
-    <p>A highly qualified and energetic team.</p>
-    <p>We are professionals in our fields with over 25+ years of experience.</p>
-    <p><b>Our workforce is thoughtfully chosen</b></p>
-  </div>
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+  }
+  function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+  }
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  </script>
 
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <p>
-            <b>Rajiv Mehta</b><br>
-            <b>Contact No.:</b> +91 9711161659<br><br>
-            <i>"Man needs his difficulties because they are necessary to enjoy success"</i>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-row-padding w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <p>
-            <b>Rupinder Juneja</b><br>
-            <b>Contact No.:</b> +91 9810050675<br><br>
-            <i>"He who wishes to secure the good of others has already secured his own"</i>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Gallery -->
-  <div class="w3-container" id="gallery" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>Gallery</b></h1>
-  </div>
-
-  <div class="w3-row-padding">
-    <p><b>Applications</b></p>
-    <div class="w3-col m6">
-      <img src="truckcar.jpg" style="width:100%" onclick="onClick(this)" alt="Car and Truck">
-    </div>
-    <div class="w3-col m3">
-      <img src="bike.jpg" style="width:100%" onclick="onClick(this)" alt="Bike">
-    </div>
-    <div class="w3-col m3">
-      <img src="scooter.jpg" style="width:100%" onclick="onClick(this)" alt="Scooter">
-    </div>
-  </div>
-  <div class="w3-row-padding">
-    <div class="w3-col m3">
-      <img src="inverter.jpg" style="width:100%" onclick="onClick(this)" alt="Inverter">
-    </div>
-    <div class="w3-col m3">
-      <img src="ac.png" style="width:100%" onclick="onClick(this)" alt="AC">
-    </div>
-    <div class="w3-col m3">
-      <img src="television.png" style="width:100%" onclick="onClick(this)" alt="Television">
-    </div>
-    <div class="w3-col m3">
-      <img src="fridge.jpg" style="width:100%" onclick="onClick(this)" alt="Refrigerator">
-    </div> 
-  </div>
-  <div class="w3-row-padding">
-    <p><b>Products</b></p>
-    <div class="w3-col m3">
-      <img src="switchharness.png" style="width:100%" onclick="onClick(this)" alt="Switch Harness">
-    </div>
-    <div class="w3-col m2">
-      <img src="batterycable.png" style="width:100%" onclick="onClick(this)" alt="Battery Cable">
-    </div>
-    <div class="w3-col m3">
-      <img src="mainharness.jpg" style="width:100%" onclick="onClick(this)" alt="Main Harness">
-    </div>
-    <div class="w3-col m2">
-      <img src="meterharness.jpg" style="width:100%" onclick="onClick(this)" alt="Meter Harness">
-    </div>
-    <div class="w3-col m2">
-      <img src="taillight.jpg" style="width:100%" onclick="onClick(this)" alt="Tail Light">
-    </div>
-  </div>
-  <div class="w3-row-padding">
-    <div class="w3-col m1">
-      <p><b>Machines</b></p>
-    </div>
-    <div class="w3-col m3">
-      <img src="pvcweld.jpg" style="width:100%" onclick="onClick(this)" alt="PVC Welding">
-    </div>
-    <div class="w3-col m2">
-      <img src="crimping.jpg" style="width:100%" onclick="onClick(this)" alt="Wire Crimping">
-    </div>
-    <div class="w3-col m3">
-      <img src="wirecutstrip.png" style="width:100%" onclick="onClick(this)" alt="Wire Curtting and Stripping">
-    </div>
-    <div class="w3-col m3">
-      <img src="wirestrip.jpg" style="width:100%" onclick="onClick(this)" alt="Wire Stripping">
-    </div> 
-  </div>
-
-  <!-- ISO 9001 Certificate -->
-  <div class="w3-container" id="certificate" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>ISO 9001 Certificate</b></h1>
-    <div class="w3-col m5">
-      <img src="certificate.jpg" style="width:100%" onclick="onClick(this)" alt="Certificate">
-    </div>
-  </div>
-
-  <!-- Inquiry -->
-  <div class="w3-container" id="inquiry" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>Inquiry</b></h1>
-    <p>Do you want us to do something for you? Fill out the form and send us the details :) We love meeting new people!</p>
-    <p>You can also reach us at <b>info@kanzen.co.in</b></p>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <div class="w3-card w3-center">
-      	<iframe src="https://docs.google.com/a/kanzen.co.in/forms/d/e/1FAIpQLSfi4ilIn7jgvRaKryKzB1_8Vhv68_0muhmD-hQJP9uliX3LVA/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- Careers -->
-  <div class="w3-container" id="careers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-indigo"><b>Careers</b></h1>
-    <p>We're Hiring!</p>
-    <p>Send us your Resume at: <b>info@kanzen.co.in</b></p>
-  </div>
-
-
-<!-- End page content -->
-</div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-  <p class="w3-right">
-    <b>Address:</b> Plot No.210, Sector 37, Pace City II, Udyog Vihar, Phase - VI, Gurgaon - 122001 (Haryana), India
-    <br>
-    <b>ISO 9001 Certified : </b>QMS-H1701237
-  </p>
-</div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-
-</body>
+  </body>
 </html>
